@@ -21,11 +21,11 @@ h3 {
 }
 
 p {
-    text-align: start;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     margin: 0;
-    line-height: 17px;
+    line-height: 19px;
 }
 
 h1 {
@@ -59,7 +59,7 @@ h3 {
     padding: 10px;
 }
 
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 780px){
     .barra {
         padding: 15px;
         display: flex;
@@ -67,16 +67,12 @@ h3 {
         align-items: center;
         max-width: 1200px;
         margin: 0 auto;
-
-    
     }
       
   }
   .navegacion{
       display: flex;
-      justify-content: space-between;
-      
-      
+      justify-content: space-evenly;  
   }
 
 
@@ -112,9 +108,10 @@ h3 {
     color: white;
 }
 
-/* main */
+/* home page */
 .titulo1 {
     margin: 60px 0;
+    
 }
 @media only screen and (min-width: 900px){
 .session {
@@ -165,14 +162,30 @@ h3 {
 
 .fotoUno img{
     width: 100%;
-    height: 800px;
+    min-height: 400px;
+    max-height: 800px;
 }
 
 
-/* nuestra panaderia */
+/* pagina menu */
+
+.colorTit{
+    color: grey;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
 .nuestra img{
     width: 100%;
     margin-top: 40px;
+    border-radius: 15px;
+}
+.segundo{
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+.nuestra{
+    margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 780px){
@@ -182,21 +195,73 @@ h3 {
         column-gap: 80px;
 
     }
-    .description{
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start;
-    
-    }
-    
 }
 .description h4{
     text-align: center;
     font-size: 25px;
-    padding: 20px 0;
+    padding: 40px 0 20px 0;
 }
-.segundo{
+.cajaProducto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.producto img{
+    width: 250px;
+    height: 250px;
+}
+.producto h4::after{
+    background-color: grey;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 200px;
+    margin: 20px auto;
+}
+@media only screen and (min-width: 769px){
+    .cajaProducto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+@media only screen and (min-width: 990px){
+    .cajaProducto{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+}
+
+/* sobre nosotros */
+.reves{
     display: flex;
     flex-direction: column-reverse;
-    
+}
+
+@media only screen and (min-width: 769px){
+    .sobreNostros{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+.sobreNostros{
+    margin-bottom: 0;
+}
+
+
+
+.sobreNosotrosImg{
+    width: 100%;
+}
+
+.sobreNosotrosText{
+    margin: 0 20px 20px 20px;
+
+}
+@media only screen and (min-width: 990px){
+    .sobreNosotrosText p{
+        margin: 0 50px;
+    }
 }
