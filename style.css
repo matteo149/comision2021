@@ -87,6 +87,8 @@ h3 {
 
 .navegacion a:hover {
     border-bottom: white solid 1px;
+    transition: all 1s;
+    transform: scale(1.1);
 }
 
 /* header imagen */
@@ -161,6 +163,7 @@ h3 {
 }
 
 .fotoUno img{
+    transition: all 3s;
     width: 100%;
     min-height: 400px;
     max-height: 800px;
