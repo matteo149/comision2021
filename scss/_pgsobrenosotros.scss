@@ -1,0 +1,32 @@
+/* sobre nosotros */
+.reves{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media only screen and (min-width: 769px){
+    .sobreNostros{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+.sobreNostros{
+    margin-bottom: 0;
+}
+
+
+
+.sobreNosotrosImg{
+    width: 100%;
+}
+
+.sobreNosotrosText{
+    margin: 0 20px 20px 20px;
+
+}
+@media only screen and (min-width: 990px){
+    .sobreNosotrosText p{
+        margin: 0 50px;
+    }
+}

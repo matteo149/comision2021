@@ -160,6 +160,7 @@ h3 {
 
 .copy {
     color: white;
+    padding-bottom: 10px;
 }
 
 .fotoUno img{
@@ -267,4 +268,11 @@ h3 {
     .sobreNosotrosText p{
         margin: 0 50px;
     }
+}
+
+/* formulario bootsrap */
+
+.borde-form{
+    border: 1px solid darkgrey;
+    padding: 20px;
 }
