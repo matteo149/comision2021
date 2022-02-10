@@ -24,21 +24,23 @@
     margin: 6px 0;
     
 }
-@media only screen and (min-width: 900px){
-.session {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
-}
+@include desktop{
+    .session {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+    }
 }
 
-.imgSession {
-    width: 270px;
-    height: 270px;
-    border-radius: 30px;  
-}
+
+
 .centraDiv{
     text-align: center;
+    .imgSession {
+        width: 270px;
+        height: 270px;
+        border-radius: 30px;  
+    }
 }
 
 
@@ -76,9 +78,14 @@
 }
 .nuestra{
     margin-bottom: 20px;
+    h4{
+        text-align: center;
+        font-size: 25px;
+        padding: 40px 0 20px 0;
+    }
 }
 
-@media only screen and (min-width: 780px){
+@include tablet {
     .nuestra{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -86,8 +93,4 @@
 
     }
 }
-.description h4{
-    text-align: center;
-    font-size: 25px;
-    padding: 40px 0 20px 0;
-}
+

@@ -43,22 +43,22 @@ h3 {
   width: 150px;
 }
 
-.logos {
+.header {
+  background-color: #1b1b1b;
+}
+
+.header .barra {
+  display: block;
+  padding: 10px;
+}
+
+.header .barra .logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.header {
-  background-color: #1b1b1b;
-}
-
-.barra {
-  display: block;
-  padding: 10px;
 }
 
 @media only screen and (min-width: 780px) {
@@ -108,7 +108,7 @@ h3 {
   margin-bottom: 0;
 }
 
-.icon {
+.iconos .icon {
   width: 30px;
   height: 30px;
   margin-left: 10px;
@@ -156,7 +156,7 @@ h3 {
   margin: 6px 0;
 }
 
-@media only screen and (min-width: 900px) {
+@media (min-width: 990px) {
   .session {
     display: -ms-grid;
     display: grid;
@@ -166,14 +166,14 @@ h3 {
   }
 }
 
-.imgSession {
+.centraDiv {
+  text-align: center;
+}
+
+.centraDiv .imgSession {
   width: 270px;
   height: 270px;
   border-radius: 30px;
-}
-
-.centraDiv {
-  text-align: center;
 }
 
 .botton {
@@ -216,7 +216,13 @@ h3 {
   margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 780px) {
+.nuestra h4 {
+  text-align: center;
+  font-size: 25px;
+  padding: 40px 0 20px 0;
+}
+
+@media (min-width: 768px) {
   .nuestra {
     display: -ms-grid;
     display: grid;
@@ -225,12 +231,6 @@ h3 {
     -webkit-column-gap: 80px;
             column-gap: 80px;
   }
-}
-
-.description h4 {
-  text-align: center;
-  font-size: 25px;
-  padding: 40px 0 20px 0;
 }
 
 /* pagina menu */
@@ -245,12 +245,12 @@ h3 {
   text-align: center;
 }
 
-.producto img {
+.cajaProducto .producto img {
   width: 250px;
   height: 250px;
 }
 
-.producto h4::after {
+.cajaProducto .producto h4::after {
   background-color: grey;
   content: "";
   display: block;
@@ -259,7 +259,7 @@ h3 {
   margin: 20px auto;
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 768px) {
   .cajaProducto {
     display: -ms-grid;
     display: grid;
@@ -269,7 +269,7 @@ h3 {
   }
 }
 
-@media only screen and (min-width: 990px) {
+@media (min-width: 990px) {
   .cajaProducto {
     display: -ms-grid;
     display: grid;
@@ -290,7 +290,7 @@ h3 {
           flex-direction: column-reverse;
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 768px) {
   .sobreNostros {
     display: -ms-grid;
     display: grid;
@@ -304,12 +304,12 @@ h3 {
   margin-bottom: 0;
 }
 
-.sobreNosotrosImg {
-  width: 100%;
+.sobreNostros .sobreNosotrosText {
+  margin: 0 20px 20px 20px;
 }
 
-.sobreNosotrosText {
-  margin: 0 20px 20px 20px;
+.sobreNostros .sobreNosotrosImg {
+  width: 100%;
 }
 
 @media only screen and (min-width: 990px) {
