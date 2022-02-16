@@ -1,0 +1,123 @@
+/* header imagen */
+
+
+.foto{
+    background-image: url("../img/imagen-principal.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 800px;
+}
+.centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    color: white;
+}
+
+
+
+/* main */
+
+    
+
+@include desktop{
+    .session {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+    }
+}
+
+
+
+.centraDiv{
+    text-align: center;
+    .imgSession {
+        width: 270px;
+        height: 270px;
+        border-radius: 30px;  
+    }
+}
+
+
+.botton {
+    display: inline-block;
+    background-color: $maron;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0 50px 0;
+    padding: 8px 40px;
+    color: $blanco;
+    text-decoration: none;
+    border-radius: 50px;
+    text-transform: capitalize;
+    &:hover{
+        color: $gris;
+    }
+}
+
+
+
+
+/* parte baja */
+
+
+.nuestra img{
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+.segundo{
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+.nuestra{
+    margin-bottom: 20px;
+    
+    h4{
+        text-align: center;
+        font-size: 25px;
+        padding: 40px 0 20px 0;
+    }
+}
+
+@include tablet {
+    .nuestra{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+
+    }
+}
+
+.bg-session{
+    background: linear-gradient(to bottom, $grisClaro, $blanco);
+    width: 100%;
+    padding: 20px 0 50px 0;
+    p{
+        text-align: left;
+        margin-left: 5px;
+        margin-bottom: 8px;
+    }
+}
+.finPagina{
+    padding: 45px 0;
+    display: block;
+    background: linear-gradient(to top, $grisClaro, $blanco);
+   p{
+       font-size: 33px;
+       text-transform: capitalize;
+       color: $maron;
+       margin-bottom: 30px;
+       line-height: 35px;
+   }
+   a{
+       display:block;
+       width: 250px;
+       margin: 0 auto;
+   }
+}

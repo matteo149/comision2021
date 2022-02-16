@@ -1,0 +1,61 @@
+/* globales */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $negro;
+    margin: 0;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 50px;
+    color: $negro;
+}
+    
+
+h2 {
+    font-size: 30px;
+    color: $negro;
+    text-transform: capitalize;
+    margin: 40px 0;
+}
+
+h3 {
+    font-size: 25px;
+    color: $grisOscuro;
+    text-transform: capitalize;
+    margin: 35px 0;
+}
+h4{
+    color: $maron;
+    text-transform: capitalize;
+    margin: 30px 0;
+    font-size: 28px;
+
+}
+a{
+text-decoration: none;
+}

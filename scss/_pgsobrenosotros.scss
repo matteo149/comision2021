@@ -1,0 +1,58 @@
+/* sobre nosotros */
+.reves{
+    display: flex;
+    flex-direction: column-reverse;
+}
+@include tablet{
+    .sobreNostros{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+.sobreNostros{
+    margin-bottom: 0;
+    .sobreNosotrosText{
+        margin: 0 20px 20px 20px;
+    
+    }
+    .sobreNosotrosImg{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 990px){
+    .sobreNosotrosText p{
+        margin: 0 50px;
+    }
+}
+
+.nosotros-desc{
+    margin: 60px 20px;
+}
+.sobreNosotrosText{
+    .camareros{
+        margin-bottom: 20px;
+    }
+}
+.sobreNosotrosText h3{
+    &::after{
+
+    
+        background-color: $gris;
+        content: "";
+        display: block;
+        height: 3px;
+        width: 150px;
+        margin: 15px auto;
+    }
+}
+.camarera-img{
+    width: 100%;
+}

@@ -1,0 +1,41 @@
+/* pagina menu */
+.cajaProducto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 15px;
+    .producto img{
+        width: 250px;
+        height: 250px;
+    }
+    .producto h4::after{
+        background-color: #808080;
+        content: "";
+        display: block;
+        height: 3px;
+        width: 200px;
+        margin: 20px auto;
+    }
+}
+
+@include tablet{
+    .cajaProducto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+@include desktop{
+    .cajaProducto{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+.colorTit{
+    color: #808080;
+    text-transform: uppercase;
+    margin-top: 70px;
+}

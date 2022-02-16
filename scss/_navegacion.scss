@@ -1,0 +1,25 @@
+/* header navegacion */
+.logos img {
+    width: 150px; 
+}
+
+
+.header {
+    background-color: $negro;
+    .barra {
+        display: block;
+        padding: 10px;
+        .logos{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+}
+
+.nav-link{
+    color: $gris;
+}
+.nav-link:hover{
+    color: $blanco;
+}
