@@ -17,9 +17,21 @@
     
 }
 
-.nav-link{
-    color: $gris;
+// .nav-link{
+//     color: $gris;
+// }
+// .nav-link:hover{
+//     color: $blanco;
+// }
+
+.nav-link { color: #666;display:inline-block; margin:0;text-transform:capitalize; }
+.nav-link:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px $blanco;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
 }
-.nav-link:hover{
-    color: $blanco;
-}
+.nav-link:hover:after { transform: scaleX(1); }
+.nav-link.fromRight:after{ transform-origin:100% 50%; }
+.nav-link.fromLeft:after{  transform-origin:  0% 50%; }

@@ -1,0 +1,47 @@
+
+
+.mapa{
+    width: 100%;
+}
+
+
+.grup-ico{
+    padding: 50px 30px 25px 30px;
+}
+
+@include desktop{
+    .grup-ico{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        align-items: flex-start;
+        
+    }
+}
+.caja-ico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-bottom: 20px;
+    h4{
+        margin: 10px;
+        margin-bottom: 20px;
+        color: $negro;
+    }
+    ul{
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        color: $negro;
+    }
+}
+
+.visitanos{
+    font-size: 20px;
+    color: $grisOscuro;
+    margin-top: 30px;
+}
+.ico{
+    width: 70px;
+}
